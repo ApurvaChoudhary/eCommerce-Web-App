@@ -1,0 +1,22 @@
+#test { 
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(src/assets/book4.jpg); 
+    background-size:cover;
+    background-attachment: fixed;
+    height: 800px;
+    /* margin-right: 50px;
+    margin-left: 50px; */
+    overflow:scroll;
+    font-family: 'Montserrat', sans-serif;
+ }   
+
+ br {
+    display: block; 
+    content: ""; 
+    margin-top: 50px; 
+}
+
+
+ 
+ 
+
+ 

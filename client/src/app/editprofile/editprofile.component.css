@@ -1,0 +1,81 @@
+#test { 
+    background-size:cover;
+ }   
+ 
+ #profile-page {
+    margin: 50px;
+    width: 80%;
+    display: inline-block;
+    padding: 10px 0px 20px;
+    margin-bottom: 10px;
+    text-align:justify;
+    padding: 50px;
+    border: 3px solid #eaeaec;
+    overflow-x: scroll;
+ }
+
+ #profile-label {
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #eaeaec;
+    padding-bottom: 15px;
+    padding: 0 24px 24px 24px;
+ }
+
+ .profileEdit-formDivision {
+    padding: 0 24px;
+    padding-top: 0px;
+    padding-right: 24px;
+    padding-bottom: 0px;
+    padding-left: 24px;
+}
+
+.profileEdit-formElement {
+    margin: 24px 0;
+    width: 100%;
+}
+
+.textInput-form-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.textInput-form-control {
+    border: solid 3px #eaeaec;
+    font-size: 16px;
+    padding: 12px;
+    height: auto;
+    color: #282c3f;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.4;
+    
+}
+
+.textInput-topPlaceholderAlternative {
+    color: black;
+    top: -6px;
+    left: 12px;
+    font-size: 12px;
+    padding: 0px 2px;
+    position: absolute;
+    background-color: #e9e6e3;
+}
+
+
+#editButton {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    font-weight: 800;
+    background-color: #FF3F6C;
+    margin: 30px 24px;
+    color: white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: 8px;
+    box-shadow: none;
+    z-index: 8;
+    position: relative;
+}

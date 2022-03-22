@@ -1,0 +1,110 @@
+
+<header>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+     
+        <img src="assets/logo2.jpg" routerLink="/" class="is-hoverable" width="280px" height="50px" style="cursor: pointer;">
+     
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="navbar-item" routerLink="/">
+            <span class="icon">
+              <span class="material-icons">
+                home
+                </span>
+            </span>
+          </a>
+          
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <strong>ALL PRODUCTS</strong>
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="">
+              DOCUMENTS
+            </a>
+            <a class="navbar-item" href="">
+              THESIS & DISSERTATION
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+        <div>
+          <a class="navbar-item" routerLink="/price_calc">
+            <strong>CALCULATOR</strong> 
+          </a>
+        </div>
+
+        <a class="navbar-item" routerLink="/cart">
+          <span class="icon">
+            <span class="material-icons">
+              shopping_cart
+              </span>
+          </span>
+        </a>
+        
+        <a class="navbar-item" routerLink="/about">
+           <strong>ABOUT US</strong> 
+        </a>
+
+
+        <ng-template #loggedOut>
+        <a class="button" (click)="auth.loginWithRedirect()" >
+              <strong>Sign in</strong>
+        </a>
+        </ng-template>
+
+
+
+        <div class="navbar-item has-dropdown is-hoverable" *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+          <a class="navbar-item" >
+            <span class="icon">
+              <span class="material-icons">
+                account_circle
+                </span>
+            </span>
+          </a>
+  
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item is-not-hoverable" routerLink="/account">
+              <b>Hello, 
+              <span *ngIf="auth.user$ | async as user">
+                {{ user.name }}
+              </span></b>
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" routerLink="/orders">
+              Orders
+            </a>
+            <a class="navbar-item" routerLink="/profile">
+              Edit Profile
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" (click)="auth.logout()">
+              Logout
+            </a>
+          </div>
+        </div>
+        
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

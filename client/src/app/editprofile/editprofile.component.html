@@ -1,0 +1,37 @@
+<div id="test">
+    <div id="profile-page">
+        <div id="profile-label">
+            Edit Details
+        </div>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="profileEdit-formDivision">
+                <div class="profileEdit-formElement">
+                    <div class="textInput-form-group">
+                        <input type="text" class="textInput-form-control" value="" id="" name="" [ngModel]="">
+                        <span class="textInput-topPlaceholderAlternative">Full name</span>
+                    </div>
+                </div>
+
+                <div class="profileEdit-formElement">
+                    <div class="textInput-form-group">
+                        <input type="text" class="textInput-form-control" value="" id="" name="" readonly ngModel>
+                        <span class="textInput-topPlaceholderAlternative">Email</span>
+                    </div>
+                </div>
+
+                <div class="profileEdit-formElement">
+                    <div class="textInput-form-group">
+                        <input type="text" class="textInput-form-control" value="" id="" name="" ngModel>
+                        <span class="textInput-topPlaceholderAlternative">Phone Number</span>
+                    </div>
+                </div>
+            </div>
+
+            <div >
+                <button id="editButton">
+                    Save Details
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

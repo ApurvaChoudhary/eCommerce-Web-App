@@ -1,0 +1,21 @@
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+    
+}
+
+header {
+   position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    }
+
+.button {
+    border-radius: 8px;
+    font-size: 15px;
+    font-style: oblique;
+    color: rgb(13, 13, 148);
+}

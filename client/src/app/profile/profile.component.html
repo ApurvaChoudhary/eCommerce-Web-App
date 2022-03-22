@@ -1,0 +1,28 @@
+<div id="test">
+    <div id="profile-page">
+        <div id="profile-label">
+            Profile Details
+        </div>
+        <table id="profile-info">
+            <tr>
+                <td>Full Name</td>
+                <td *ngIf="auth.user$ | async as user">{{ user.name }}</td>
+            </tr>
+           
+            <tr>
+                <td>Email Id</td>
+                <td *ngIf="auth.user$ | async as user">{{ user.email }}</td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td > - </td>
+            </tr>   
+
+        </table>
+        <a  id="editButton" href="/editprofile">
+            EDIT
+        </a>
+    </div>
+</div>
+

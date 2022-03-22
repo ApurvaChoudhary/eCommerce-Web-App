@@ -1,0 +1,14 @@
+#test { 
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(); 
+    background-size:cover;
+    background-attachment: fixed;
+    height: 800px;
+    overflow:scroll;
+    font-family: 'Montserrat', sans-serif;
+ }    
+
+ br {
+    display: block; 
+    content: ""; 
+    margin-top: 50px; 
+ }
